@@ -14,6 +14,7 @@ public class Donante {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(length = 60, nullable = false)
+
     private String Nombre;
     @Column(length = 60, nullable = false)
     private String Apellido;
