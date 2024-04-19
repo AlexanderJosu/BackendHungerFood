@@ -34,5 +34,6 @@ public class Usuario {
 
     //id roles
 
+
     //id tipo donacion
 }
