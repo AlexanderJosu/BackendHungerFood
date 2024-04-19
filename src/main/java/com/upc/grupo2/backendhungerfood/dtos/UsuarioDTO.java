@@ -1,5 +1,6 @@
 package com.upc.grupo2.backendhungerfood.dtos;
 
+import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DonanteDTO {
+public class UsuarioDTO {
     private Long id;
     private String Nombre;
     private String Apellido;

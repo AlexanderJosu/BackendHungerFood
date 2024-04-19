@@ -9,17 +9,30 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Donante {
+public class Usuario {
+    //ID
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "usuario_id")
     private Long id;
-    @Column(length = 60, nullable = false)
 
+    //Nombre
+    @Column(name = "Nombre",length = 60, nullable = false)
     private String Nombre;
-    @Column(length = 60, nullable = false)
+
+    //Apellido
+    @Column(name = "Apellido",length = 60, nullable = false)
     private String Apellido;
-    @Column(length = 60,nullable = false)
+
+    //Correo y sea único
+    @Column(name = "Correo", length = 60,nullable = false, unique = true)
     private String Correo;
+
+    //Contraseña
     @Column(length = 60,nullable = false)
     private String Contrasenia;
+
+    //id roles
+
+    //id tipo donacion
 }
