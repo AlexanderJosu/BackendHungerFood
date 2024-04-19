@@ -4,6 +4,7 @@ import com.upc.grupo2.backendhungerfood.entities.Usuario;
 import com.upc.grupo2.backendhungerfood.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Service
@@ -12,6 +13,7 @@ public class UsuarioService {
     private UsuarioRepository usuarioRepository;
 
     //Registrar Usuario
+    @Transactional //cualquier error no se crear la entidad y el id no se incrementará
     public Usuario registrarUsuario(Usuario usuario){
         return usuarioRepository.save(usuario);
     }
