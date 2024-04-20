@@ -35,4 +35,6 @@ public class Usuario {
     //id roles
 
     //id tipo donacion
+
+    //hola, soy diego
 }
