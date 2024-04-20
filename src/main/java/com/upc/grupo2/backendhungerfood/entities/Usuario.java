@@ -36,5 +36,5 @@ public class Usuario {
 
     //id tipo donacion
 
-    //hola, soy diego
+    //hola soy diego
 }
