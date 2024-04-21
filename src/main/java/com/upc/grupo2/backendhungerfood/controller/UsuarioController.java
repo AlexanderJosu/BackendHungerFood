@@ -77,6 +77,7 @@ public class UsuarioController {
             ModelMapper modelMapper = new ModelMapper();
             usuarioDTO = modelMapper.map(usuario, UsuarioDTO.class);
             return new ResponseEntity<>(usuarioDTO, HttpStatus.OK);
+            
         }
         catch (Exception e){
             e.printStackTrace();
