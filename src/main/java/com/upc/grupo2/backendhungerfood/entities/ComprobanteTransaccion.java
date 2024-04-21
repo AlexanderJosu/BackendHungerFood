@@ -19,4 +19,9 @@ public class ComprobanteTransaccion {
     //Monto total de transaccion en comprobante
     @Column(name = "Monto_total", nullable = false)
     private Double montoTotal;
+
+    //Usuario(donante)
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 }

@@ -25,4 +25,9 @@ public class AlimentosDonadosPorDonante {
     //Cantidad de alimentos donados
     @Column(name = "Cantidad_alimentos", nullable = false)
     private Long cantidadAlimentos;
+
+    //Usuario(donante)
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 }
