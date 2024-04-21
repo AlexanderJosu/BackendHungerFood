@@ -1,7 +1,6 @@
 package com.upc.grupo2.backendhungerfood.controller;
 
 import com.upc.grupo2.backendhungerfood.dtos.ComprobanteTransaccionDTO;
-import com.upc.grupo2.backendhungerfood.entities.ComprobanteTransaccion;
 import com.upc.grupo2.backendhungerfood.services.ComprobanteTransaccionService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

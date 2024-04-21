@@ -1,7 +1,6 @@
 package com.upc.grupo2.backendhungerfood.controller;
 
 import com.upc.grupo2.backendhungerfood.dtos.AlimentosDonadosPorDonanteDTO;
-import com.upc.grupo2.backendhungerfood.entities.AlimentosDonadosPorDonante;
 import com.upc.grupo2.backendhungerfood.services.AlimentosDonadosPorDonanteService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
